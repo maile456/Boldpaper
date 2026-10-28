@@ -1,0 +1,4 @@
+interface:
+  display_name: "Boldpaper"
+  short_description: "用大色块、粗黑边框与硬阴影制作或迭代有个性的响应式前端"
+  default_prompt: "请使用 $boldpaper，按我的用途制作一个有大色块、粗边框和硬阴影的前端，完成实际页面和交互。"

@@ -1,0 +1,14 @@
+{
+  "name": "boldpaper-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A reusable, dependency-free creator storefront starter.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

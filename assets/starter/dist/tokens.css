@@ -1,0 +1,15 @@
+:root {
+  --ink: #242323;
+  --paper: #f5f1e8;
+  --pink: #ff90e8;
+  --yellow: #ffc900;
+  --mint: #c5f1cf;
+  --blue: #b8c8ff;
+  --white: #ffffff;
+  --border: 2px solid var(--ink);
+  --shadow: 5px 5px 0 var(--ink);
+  --radius: 6px;
+  --font: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+  --display: "Arial Black", Arial, "Microsoft YaHei", sans-serif;
+  --content: 1280px;
+}

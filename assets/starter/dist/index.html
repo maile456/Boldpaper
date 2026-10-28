@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff90e8">
+  <meta name="description" content="好东西 goodthings：给创作者的灵感和数字工具。一个可复用、可交给 AI 继续开发的原创前端示例。">
+  <title>goodthings 好东西 · 为好点子而生</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="goodthings 好东西首页">goodthings<span class="brand-mark" aria-hidden="true">✳</span></a>
+    <nav class="desktop-nav" aria-label="主要导航">
+      <a href="#explore">发现好东西</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <div class="header-actions">
+      <button class="saved-nav" id="saved-nav" aria-pressed="false"><span aria-hidden="true">♡</span> 收藏 <span id="saved-count">0</span></button>
+      <a class="header-cta" href="#explore">找点灵感 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="tiny-dot"></span> SMALL IDEAS. GOOD THINGS.</div>
+        <h1 id="hero-title">把你的好点子，<br>做成<span class="underlined">好东西<svg viewBox="0 0 320 22" preserveAspectRatio="none" aria-hidden="true"><path d="M5 13Q140 -3 310 9M14 20Q165 5 291 17"/></svg></span>。</h1>
+        <p>为热爱创造的你，准备了一点灵感、<br class="desktop-break">一些工具，和一个开始的好理由。</p>
+        <div class="hero-actions"><a class="button button-dark" href="#explore">发现你的下一件好东西 <span aria-hidden="true">↗</span></a><span class="hand-note">从这里开始 <svg viewBox="0 0 94 42" aria-hidden="true"><path d="M90 4C70 42 32 44 5 17m0 0 3 17M5 17l19 2"/></svg></span></div>
+        <div class="hero-foot"><span class="mini-face" aria-hidden="true">☺</span> 给独立创作者，也给还没开始的你。</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="彩色创意拼贴：一本写着 MAKE SOMETHING GOOD 的薄荷绿手册，粉色贴纸和黄色星星">
+        <div class="art-grid"></div>
+        <span class="floating-word">A LITTLE<br>INSPIRATION ↘</span>
+        <div class="art-orbit"></div>
+        <div class="hero-book">
+          <div class="book-top"><span>THE CREATOR'S<br>STARTER KIT</span><span>VOL.<br>001</span></div>
+          <div class="book-title">MAKE<br>SOMETHING<br><span>GOOD.</span></div>
+          <svg class="book-flower" viewBox="0 0 180 180" aria-hidden="true"><g fill="var(--pink)" stroke="var(--ink)" stroke-width="2.5"><ellipse cx="90" cy="90" rx="28" ry="78"/><ellipse cx="90" cy="90" rx="28" ry="78" transform="rotate(60 90 90)"/><ellipse cx="90" cy="90" rx="28" ry="78" transform="rotate(120 90 90)"/><circle cx="90" cy="90" r="29" fill="var(--yellow)"/></g><path d="M77 96q13 14 26 0" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/><g fill="var(--ink)"><circle cx="79" cy="83" r="3"/><circle cx="101" cy="83" r="3"/></g></svg>
+          <div class="book-bottom">LESS OVERTHINKING. MORE MAKING. <span>↗</span></div>
+        </div>
+        <div class="round-sticker"><span>100%</span><small>你的创造力</small></div>
+        <div class="floating-card"><span class="card-cursor">↗</span><div>下一个好东西<small>可能就是你的作品。</small></div><span class="card-star">✦</span></div>
+        <span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✳</span>
+        <div class="art-caption">IDEAS ARE ONLY THE BEGINNING. / 01</div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="好点子值得被看见，保持好奇，开始创造"><div>GOOD IDEAS DESERVE TO BE SHARED <span>✳</span> 保持好奇，开始创造 <span>✳</span> MADE BY PEOPLE, FOR PEOPLE <span>✳</span> 好点子值得被看见 <span>✳</span></div></div>
+
+    <section class="explore section-wrap" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><div class="eyebrow">THE GOOD STUFF</div><h2 id="explore-title">一些好东西，<span class="serif-word">just for you.</span></h2></div><p>小小的数字工具。<br>给大大的创作欲。</p></div>
+      <div class="browse-controls">
+        <div class="filters" role="group" aria-label="产品分类">
+          <button class="filter active" data-category="all" aria-pressed="true">全部好物 <span>06</span></button>
+          <button class="filter" data-category="design" aria-pressed="false">设计资源</button>
+          <button class="filter" data-category="tools" aria-pressed="false">效率工具</button>
+          <button class="filter" data-category="learn" aria-pressed="false">灵感手册</button>
+        </div>
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input id="search" type="search" placeholder="搜点好东西…" aria-label="搜索好东西" autocomplete="off"></label>
+      </div>
+      <div class="results-line"><p id="results-count" role="status">6 件好东西，等你发现</p><button id="reset-filters" hidden>重置筛选 ↺</button><span class="demo-label">原创示例商店</span></div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">↗</span><h3>好东西还在路上。</h3><p id="empty-message">换个关键词，灵感也许就在下一个转角。</p><button class="button button-dark" id="empty-reset">看看全部好物</button></div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-art" aria-hidden="true"><div class="idea-sheet"><span>NOTE TO SELF</span><strong>your ideas<br>are worth<br><em>making.</em></strong><div class="idea-scribble">✳</div><small>不用完美，先开始。</small></div><div class="idea-sticker">MAKE<br>IT REAL ↗</div></div>
+      <div class="about-copy"><div class="eyebrow">A SMALL CORNER FOR BIG IDEAS</div><h2 id="about-title">好东西，<br>从一个小念头开始。</h2><p>一本手册、一套字体、一个整理灵感的小工具。<br>我们相信，每一份认真创作的小东西，<br>都能让另一个人的开始，轻松一点。</p><a class="text-link" href="#explore">找到你的开始 <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="closing"><span class="closing-spark" aria-hidden="true">✳</span><div><div class="eyebrow">LESS SCROLLING. MORE CREATING.</div><h2>好了，该你创造点什么了。</h2></div><a class="button button-dark" href="#explore">带点灵感走 <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer><div class="footer-top"><a href="#" class="footer-wordmark" aria-label="回到首页">goodthings<span>®</span></a><p>好东西。为好点子而生。</p></div><div class="footer-bottom"><span>© <span id="year">2026</span> goodthings · 原创前端示例</span><span>Made with curiosity & a little bit of pink.</span><a href="#">回到顶部 ↑</a></div></footer>
+
+  <dialog id="product-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="关闭详情" autofocus>×</button>
+    <div id="dialog-art" class="dialog-art" aria-hidden="true"></div>
+    <div class="dialog-content"><div class="eyebrow" id="dialog-category"></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><h3>这份灵感里有什么？</h3><ul id="dialog-includes"></ul><div class="dialog-meta"><span>原创演示资源</span><strong id="dialog-price"></strong></div><button class="button button-dark" id="download-demo">下载示例内容 <span aria-hidden="true">↓</span></button><p class="download-note">体验下载流程，获得本产品的示例说明文件。</p></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript-note">启用 JavaScript 后即可浏览产品、搜索与收藏。设计展示与页面导航仍可使用。</div></noscript>
+</body>
+</html>
